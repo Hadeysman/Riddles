@@ -49,6 +49,11 @@ body {
     height: 60px;
     margin: 0 auto;
 }
+#test, #reveal{
+color: 	#4D9A66;
+
+ text-align: center;
+}
 </style>
 
 <script type="text/javascript">
@@ -96,9 +101,10 @@ body {
 
   <div data-role=content>
 
-
+<div id = qcont>
   <h1 align="center" id="test">This is a test</h1></br>
   <h1 align="center" id="reveal"></h1></br>
+</div>
   <button id="stump" onclick="document.getElementById('reveal').innerHTML =
 riddles[rand].answer" value="number"></button>
   <button id="refresh" onclick="refFunc()">Click For New Riddle</button>
@@ -108,16 +114,73 @@ riddles[rand].answer" value="number"></button>
       var riddles = [
   	    {
   	    "question":"The wetter I am the more I dry, what am I?",
-  	    "answer":"A towel"
+  	    "answer":"A Towel."
   	    },
   	    {
-  	    "question":"Question 2",
-  	    "answer":"Answer 2"
+  	    "question":"Poor people have it.  Rich people need it. If you eat it you die.  What is it?",
+  	    "answer":"Nothing."
   	    },
   	    {
-  	    "question":"Question 3",
-  	    "answer":"Answer 3"
+  	    "question":"What comes down but never goes up?",
+  	    "answer":"Rain."
   	    },
+  	    {
+		"question":"Marys' mother has four daughters: April, May, and June.  Who is the fourth daughter?",
+		"answer":"Mary"
+		},
+		{
+		"question":"Brothers and sisters I have none but this man's father is my father's son.  Who is the man?",
+		"answer":"The man is my son."
+		},
+		{
+		"question":"What can travel around the world while staying in a corner?",
+		"answer":"A Stamp."
+  	    },
+  	    {
+  	    "question":"The man who invented it doesn't want it.  The man who bought it doen't need it.  The man who needs it doesn't know it.  What is it?",
+  	    "answer":"A Coffin."
+  	    },
+  	    {
+		"question":"Give me food and I will live, give me watter and I will die.",
+		"answer":"A Fire."
+  	    },
+  	    {
+  	    "question":"No sooner spoken than broken.",
+				"answer":"Silence."
+  	    },
+  	    {
+  	    "question":"I am weightless, but you can see me. Put me in a bucket, and I'll make it lighter. What am I?",
+				"answer":"A Hole."
+  	    },
+  	    {
+  	    "question":"I'm light as a feather, yet the strongest man can't hold me for much more than a minute. What am I?",
+				"answer":"Breath."
+  	    },
+  	    {
+  	    "question":"I'm where yesterday follows today, and tomorrow's in the middle. What am I?",
+				"answer":"A Dictionary."
+  	    },
+  	    {
+  	    "question":"What is it that, after you take away the whole, some still remains?",
+				"answer":"The word 'wholesome'"
+  	    },
+  	    {
+  	    "question":"What kind of coat can only be put on when wet?",
+				"answer":"A coat of paint."
+  	    },
+  	    {
+  	    "question":"Glittering points that downward thrust, Sparkling spears that never rust. What is it?",
+				"answer":"Iceicles."
+  	    },
+  	    {
+  	    "question":"Lighter than what I'm made of, More of me is hidden than is seen. What am I?",
+				"answer":"A Glacier."
+  	    },
+  	    {
+  	    "question":"What work is it that the faster you work, the longer it is before you're done, and the slower you work, the sooner you're finished?",
+				"answer":"Roasting meat on a spit."
+  	    },
+
   	  ];
   	  var rand = Math.floor((Math.random() * riddles.length));
 
